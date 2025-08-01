@@ -1,6 +1,6 @@
-# vue3-posts
+# vue3-posts Project
 
-This template should help get you started developing with Vue 3 in Vite.
+vue3 기반으로 만든 게시글 관리 프로젝트(짐코딩)
 
 ## Recommended IDE Setup
 
