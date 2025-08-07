@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
+import SkiilsView from "@/views/SkiilsView.vue";
+import ProjectView from "@/views/ProjectView.vue";
 import PostCreateView from '@/views/posts/PostCreateView.vue';
 import PostDetailView from '@/views/posts/PostDetailView.vue';
 import PostListView from '@/views/posts/PostListView.vue';
@@ -21,6 +23,16 @@ const routes = [
         path: '/about',
         name: 'About',
         component: AboutView,
+    },
+    {
+        path: '/skiils',
+        name: 'Skiils',
+        component: SkiilsView,
+    },
+    {
+        path: '/project',
+        name: 'Project',
+        component: ProjectView,
     },
     {
         path: '/posts',

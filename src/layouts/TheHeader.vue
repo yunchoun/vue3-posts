@@ -1,34 +1,31 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">ESME CODING</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <RouterLink class="nav-link" active-class="active" to="/">Home</RouterLink>
-                        </li>
-                        <li class="nav-item">
-                            <RouterLink class="nav-link" active-class="active" to="/about">About</RouterLink>
-                        </li>
-                        <li class="nav-item">
-                            <RouterLink class="nav-link" active-class="active" to="/posts">게시글</RouterLink>
-                        </li>
-                        <li class="nav-item">
-                            <RouterLink class="nav-link" active-class="active" to="/nested">nested</RouterLink>
-                        </li>
-                    </ul>
-                    <div class="d-flex">
-                        <button class="btn btn-outline-light" type="button" @click="goPage">글쓰기</button>
-                    </div>
-                </div>
-            </div>
+        <nav class="navBar">
+            <div class="logo"><a class="" href="#"><img src="/src/assets/images/logo.png" alt=""></a></div>
+            <ul class="nav">
+                <li>
+                    <RouterLink active-class="active" to="/">Home</RouterLink>
+                </li>
+                <li>
+                    <RouterLink active-class="active" to="/about">About Me</RouterLink>
+                </li>
+                <li>
+                    <RouterLink active-class="active" to="/skiils">Skiils</RouterLink>
+                </li>
+                <li>
+                    <RouterLink active-class="active" to="/project">Projects</RouterLink>
+                </li>
+                <li>
+                    <RouterLink active-class="active" to="/posts">게시글</RouterLink>
+                </li>
+                <!-- <li>
+                    <RouterLink active-class="active" to="/nested">nested</RouterLink>
+                </li> -->
+            </ul>
         </nav>
+        <div class="btnArea">
+            <button class="btn" type="button" @click="goPage">글쓰기</button>
+        </div>
     </header>
 </template>
 
@@ -45,4 +42,88 @@ const goPage = () => {
 
 </script>
 
-<style></style>
+<style>
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0e2ff;
+    padding: 0 30px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav li>a {
+    position: relative;
+    padding: 20px 20px;
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    ;
+}
+
+.nav li>a:hover,
+.nav li>a.active {
+    color: #420085;
+}
+
+.nav li>a:hover:after,
+.nav li>a.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #c19fe6;
+}
+
+
+.logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header .btnArea {
+    display: flex;
+    align-items: center;
+}
+
+header .btn {
+    font-size: 14px;
+    font-family: 'Pretendard-medium';
+    background-color: #aa5aff;
+    color: #fff;
+    border: 2px solid #aa5aff;
+}
+
+header .btn:hover {
+    border: 2px solid #aa5aff;
+    box-sizing: border-box;
+    background-color: #af65ff;
+    color: #fff;
+}
+
+header .btn:focus {
+    border: 2px solid #aa5aff;
+    box-sizing: border-box;
+    background-color: #af65ff;
+    color: #fff;
+}
+</style>

@@ -1,11 +1,26 @@
 <script setup>
 import TheHeader from '@/layouts/TheHeader.vue';
 import TheView from '@/layouts/TheView.vue';
+import TheSideBar from './layouts/TheSideBar.vue';
 </script>
 
 <template>
-  <TheHeader></TheHeader>
-  <TheView></TheView>
+  <div class="layout">
+    <TheSideBar></TheSideBar>
+    <div class="main-content">
+      <TheHeader></TheHeader>
+      <TheView></TheView>
+    </div>
+  </div>
+
 </template>
 
-<style></style>
+<style>
+.layout {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container py-4">
+        <div class="view">
             <RouterView></RouterView>
         </div>
     </main>
@@ -10,4 +10,15 @@
 
 </script>
 
-<style></style>
+<style>
+.view {
+    padding: 60px 50px;
+    box-sizing: border-box;
+}
+
+.view h2 {
+    text-align: center;
+    font-family: 'Pretendard-Bold';
+    margin-bottom: 30px;
+}
+</style>
