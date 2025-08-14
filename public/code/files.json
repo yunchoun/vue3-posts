@@ -1,0 +1,17 @@
+{
+    "art-canvas": [
+        "canvas-clip.js"
+    ],
+    "art-rotate": [
+        "rotate-game.js"
+    ],
+    "art-draw": [
+        "draw-board.js"
+    ],
+    "art-drag": [
+        "drag-game.js"
+    ],
+    "eng-record": [
+        "audio-recoder.js"
+    ]
+}

@@ -4,10 +4,7 @@
             <div class="logo"><a class="" href="#"><img src="/src/assets/images/logo.png" alt=""></a></div>
             <ul class="nav">
                 <li>
-                    <RouterLink active-class="active" to="/">Home</RouterLink>
-                </li>
-                <li>
-                    <RouterLink active-class="active" to="/about">About Me</RouterLink>
+                    <RouterLink active-class="active" to="/">About Me</RouterLink>
                 </li>
                 <li>
                     <RouterLink active-class="active" to="/skiils">Skiils</RouterLink>
@@ -47,8 +44,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 75px;
     border-bottom: 1px solid #f0e2ff;
     padding: 0 30px;
 }
@@ -66,12 +62,11 @@ header {
 
 .nav li>a {
     position: relative;
-    padding: 20px 20px;
+    padding: 25px 30px;
     display: block;
     box-sizing: border-box;
     font-family: 'Pretendard-Regular';
     font-size: 15px;
-    ;
 }
 
 .nav li>a:hover,

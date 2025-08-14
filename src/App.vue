@@ -22,5 +22,7 @@ import TheSideBar from './layouts/TheSideBar.vue';
 
 .main-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 </style>

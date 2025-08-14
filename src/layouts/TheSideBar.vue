@@ -34,7 +34,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
     padding: 20px;
     box-sizing: border-box;
     background-color: #e1c8fe;
@@ -48,11 +47,11 @@
 }
 
 .sideWrap .profile .profileImg {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 .sideWrap .profile .profileImg img {
@@ -62,17 +61,21 @@
 .sideWrap .profile .name {
     font-family: 'Pretendard-Medium';
     color: #333;
+    font-size: 25px;
 }
 
 .sideWrap .profile .career {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Pretendard-Light';
 }
 
 .sideWrap .listWrap {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .sideWrap .list {
@@ -82,8 +85,12 @@
     gap: 5px;
 }
 
+.sideWrap .list i {
+    font-size: 30px;
+}
+
 .sideWrap .list .text {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Pretendard-Light';
     color: #333;
 }

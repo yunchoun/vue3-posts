@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from "@/views/HomeView.vue";
+// import HomeView from "@/views/HomeView.vue";
 import AboutView from "@/views/AboutView.vue";
 import SkiilsView from "@/views/SkiilsView.vue";
 import ProjectView from "@/views/ProjectView.vue";
@@ -12,15 +12,11 @@ import NestedView from '@/views/nested/NestedView.vue';
 import NestedOneView from '@/views/nested/NestedOneView.vue';
 import NestedTwoView from '@/views/nested/NestedTwoView.vue';
 import NestedHomeView from '@/views/nested/NestedHomeView.vue';
+import CodeViewer from '@/views/CodeViewer.vue';
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: HomeView,
-    },
-    {
-        path: '/about',
         name: 'About',
         component: AboutView,
     },
@@ -49,7 +45,7 @@ const routes = [
         name: 'PostDetail',
         component: PostDetailView,
         // props: true,
-        props: route=> ({
+        props: route => ({
             id: route.params.id,
         })
     },
@@ -84,6 +80,11 @@ const routes = [
                 component: NestedTwoView,
             },
         ]
+    },
+    {
+        path: '/code/:project',
+        name: 'CodeViewer',
+        component: CodeViewer,
     },
 ]
 
